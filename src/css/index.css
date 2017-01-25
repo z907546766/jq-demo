@@ -512,6 +512,8 @@ button {
     opacity: 0;
     visibility: hidden;
     transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
 }
 
 .navbar .dropdown-menu ul {
@@ -581,6 +583,8 @@ button {
     -webkit-animation: bounceInRight .5s;
     animation: bounceInRight .5s;
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform:translateX(0);
 }
 
 .swiper .carousel-indicators {
@@ -589,6 +593,8 @@ button {
     left: 0;
     top: 0;
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform:translateX(0);
 }
 
 .swiper .carousel-indicators li {
@@ -633,17 +639,23 @@ button {
     border-radius: 50%;
     background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/Sprites.png)no-repeat;
     transition: transform .2s;
+    -webkit-transition: transform .2s;
+    -moz-transition: transform .2s;
 }
 
 .swiper .carousel-control a:first-child {
     left: 0;
     transform: translateX(-42px);
+    -webkit-transform: translateX(-42px);
+     -moz-transform: translateX(-42px);
     background-position: -276px -48px;
 }
 
 .swiper .carousel-control a:last-child {
     right: 0;
     transform: translateX(42px);
+    -webkit-transform: translateX(42px);
+     -moz-transform: translateX(42px);
     background-position: -276px 0;
 }
 
@@ -726,10 +738,13 @@ button {
     margin-left: -82.5px;
     z-index: 998;
     transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
 }
 
 .ps-contnet a:hover img {
     transform-origin: center;
+    -webkit-transform-origin: center;
     transform: scale(1.4);
     -webkit-transform: scale(1.4);
     -moz-transform: scale(1.4);
@@ -868,6 +883,8 @@ button {
     font-size: 12px;
     line-height: 18px;
     transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
 }
 
 .about-us .text-ellipsis:after {
@@ -926,6 +943,8 @@ button {
 
 .advertise .left .img img {
     transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
 }
 
 .advertise .left .img:hover img {
@@ -1052,6 +1071,8 @@ button {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
     padding: 2px;
     border: 1px solid rgb(204, 204, 204);
     width: 50px;
