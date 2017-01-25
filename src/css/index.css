@@ -1,0 +1,1233 @@
+/* 公共 */
+
+html {
+    height: 100%;
+    width: 100%;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/Background_p.gif);
+}
+
+.header,
+.main,
+.footer {
+    width: 100%;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.title {
+    padding-bottom: 10px;
+    height: 46px;
+    overflow: hidden;
+    border-bottom: dashed 1px #999;
+}
+
+.title h2 {
+    float: left;
+    text-align: left;
+    height: 46px;
+}
+
+.title strong {
+    display: block;
+    color: #1ba6e7;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.title strong span {
+    color: #000;
+    font-size: 24px;
+}
+
+.title span {
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+}
+
+.title a {
+    float: right;
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid rgb(102, 102, 102);
+    font-size: 14px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.title a:hover {
+    color: #1ba6e7;
+    background: #333;
+    border: 1px solid #1ba6e7;
+}
+
+
+/* 动画效果 */
+
+@-webkit-keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounceInUp {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3000px, 0);
+        transform: translate3d(0, 3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInUp {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3000px, 0);
+        transform: translate3d(0, 3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+/* 头部 */
+
+.header-top {
+    width: 100%;
+    background-color: #fff;
+    height: 29px;
+    line-height: 29px;
+    border-bottom: 1px solid #c8c8c8;
+    overflow: hidden;
+}
+
+.header-top span {
+    margin-right: 20px;
+    color: #939393;
+    font-size: 12px;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+
+.header-top span i {
+    float: left;
+    margin-right: 10px;
+    height: 30px;
+    width: 20px;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/Sprites.png)no-repeat;
+    background-origin: padding-box;
+}
+
+.header-top .tell i {
+    background-position-y: -30px;
+}
+
+.header-top .email i {
+    background-position-y: -100px;
+}
+
+.header-top .language {
+    float: right !important;
+}
+
+.header-top .language i {
+    background-position-y: -173px;
+}
+
+.enter-class-active {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: bounceInDown .4s;
+    animation: bounceInDown .4s;
+}
+
+.leave-class-active {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: bounceInUp .4s;
+    animation: bounceInUp .4s;
+}
+
+.header-top .activeNow i {
+    background-position-y: 0;
+}
+
+.header-top .activeNow i {
+    background-position-y: -70px;
+}
+
+.header-top .activeNow i {
+    background-position-y: -143px;
+}
+
+.header_in {
+    width: 100%;
+    height: 74px;
+    line-height: 74px;
+}
+
+.header_in .brand {
+    float: left;
+    width: 153px;
+}
+
+.header_in .form-search {
+    float: right;
+    width: 338px;
+    overflow: hidden;
+}
+
+.form-search input,
+select,
+button {
+    border: none;
+    display: block;
+    height: 24px;
+}
+
+.header_in .form-search div {
+    float: left;
+}
+
+.search-text,
+.search-select,
+.search-btn {
+    position: relative;
+    height: 24px;
+    margin-top: 25px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.search-text label {
+    position: absolute;
+    display: block;
+    height: 24px;
+    width: 20px;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/Sprites.png)no-repeat 2px -254px;
+}
+
+.search-text input {
+    width: 171px;
+    padding-left: 22px;
+    background-origin: padding-box;
+    box-sizing: border-box;
+}
+
+.search-select select {
+    width: 79px;
+    color: #939393;
+    font-size: 12px;
+}
+
+.search-btn button {
+    width: 82px;
+    text-align: center;
+    line-height: 24px;
+    background: rgb(27, 166, 231);
+    color: #fff;
+    text-shadow: rgb(0, 0, 0) 1px 1px 3px;
+    cursor: pointer;
+}
+
+.search-btn button:hover {
+    background-color: #197faf;
+}
+
+.nav {
+    position: absolute;
+    z-index: 40;
+    width: 100%;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/nav_b.png)repeat-x;
+    height: 46px;
+    line-height: 46px;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar .dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 46px;
+    padding: 5px;
+    width: 130px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.navbar .dropdown-menu ul {
+    padding: 2px;
+    height: 60px;
+    background-color: #f0f0f0;
+}
+
+.navbar .dropdown-menu li {
+    display: block;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px dashed rgb(204, 204, 204);
+}
+
+.navbar .dropdown-menu li:hover a {
+    background-color: #333;
+}
+
+.navbar .dropdown-menu a {
+    display: block;
+    font-size: 14px;
+    color: #1BA6E7;
+}
+
+.navbar li a {
+    display: block;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.navbar li:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+
+/* 主体 */
+
+
+/* 轮番 */
+
+.swiper {
+    position: relative;
+    width: 100%;
+    min-width: 960px;
+    height: 526px;
+    overflow: hidden;
+}
+
+.swiper:hover .carousel-control a:first-child {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: bounceInLeft .5s;
+    animation: bounceInLeft .5s;
+    transform: translateX(0);
+}
+
+.swiper:hover .carousel-control a:last-child {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: bounceInRight .5s;
+    animation: bounceInRight .5s;
+    transform: translateX(0);
+}
+
+.swiper .carousel-indicators {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+}
+
+.swiper .carousel-indicators li {
+    float: left;
+    height: 526px;
+}
+
+.swiper .carousel-indicators li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper .carousel-indicators li:nth-of-type(4n+1) a {
+    background: url(http://www.kdrp2004.com/wp-content/uploads/2016/12/huixinyouke.png)no-repeat;
+    background-size: cover;
+}
+
+.swiper .carousel-indicators li:nth-of-type(4n+2) a {
+    background: url(http://www.kdrp2004.com/wp-content/uploads/2015/10/kdrp-03.jpg)no-repeat;
+    background-size: cover;
+}
+
+.swiper .carousel-indicators li:nth-of-type(4n+3) a {
+    background: center url(http://www.kdrp2004.com/wp-content/uploads/2016/11/banner.png)no-repeat;
+    background-size: cover;
+}
+
+.swiper .carousel-indicators li:nth-of-type(4n+4) a {
+    background: center url(http://www.kdrp2004.com/wp-content/uploads/2016/11/banner2-1.png)no-repeat;
+    background-size: cover;
+}
+
+.swiper .carousel-control a {
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    height: 42px;
+    width: 42px;
+    margin-top: -21px;
+    display: block;
+    border-radius: 50%;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/Sprites.png)no-repeat;
+    transition: transform .2s;
+}
+
+.swiper .carousel-control a:first-child {
+    left: 0;
+    transform: translateX(-42px);
+    background-position: -276px -48px;
+}
+
+.swiper .carousel-control a:last-child {
+    right: 0;
+    transform: translateX(42px);
+    background-position: -276px 0;
+}
+
+.mask {
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #fff;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/nav_b.png)repeat-x;
+    z-index: 30;
+}
+
+
+/* 产品服务 */
+
+.ps-title {
+    width: 100%;
+    height: 46px;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.ps-title span {
+    display: block;
+}
+
+.ps-title span:first-child {
+    color: rgb(27, 166, 231);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 33px;
+}
+
+.ps-title span:last-child {
+    color: rgb(51, 51, 51);
+    font-size: 9.6px;
+    line-height: 13px;
+}
+
+.ps-contnet {
+    padding: 20px 0;
+    background-color: #9cc8dd;
+    height: 190px;
+}
+
+.ps-contnet .item {
+    position: relative;
+    width: 25%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ps-contnet a,
+.ps-contnet a span,
+.ps-contnet a img {
+    display: block;
+    height: 165px;
+    width: 165px;
+}
+
+.ps-contnet a {
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.ps-contnet a span {
+    position: relative;
+    z-index: 999;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/hold_19.png)no-repeat;
+}
+
+.ps-contnet a img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -82.5px;
+    z-index: 998;
+    transition: all .5s;
+}
+
+.ps-contnet a:hover img {
+    transform-origin: center;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+}
+
+.ps-contnet h2 {
+    height: 22px;
+    line-height: 22px;
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+}
+
+.ps-contnet .item:hover h2 {
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+/* 合作 */
+
+.link-work {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.link-work .lw-content {
+    position: relative;
+    padding: 50px 5px 30px;
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+    border-bottom: dashed 1px #999999;
+}
+
+.lw-content .carousel-indicators {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    overflow: hidden;
+}
+
+.lw-content .carousel-indicators a {
+    float: left;
+    height: 266px;
+    width: 236px;
+    margin-right: 7px;
+    text-align: center;
+}
+
+.lw-content .carousel-indicators img {
+    display: block;
+    height: 230px;
+    width: 230px;
+    border: 3px solid #fff;
+}
+
+.lw-content .carousel-indicators img:hover {
+    border-color: #1ba6e7;
+}
+
+.lw-content .carousel-indicators span {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+.lw-content .carousel-indicators span:hover {
+    color: #20b2aa;
+}
+
+.lw-content .carousel-control {
+    position: absolute;
+    bottom: 30px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+
+.lw-content .carousel-control a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #c2c2c2;
+    margin-right: 10px;
+}
+
+.lw-content .carousel-control a:hover {
+    background-color: #20b2aa;
+}
+
+
+/* 关于我们 */
+
+.about-us-wrapper {
+    width: 100%;
+    height: 327px;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/fix.jpg)no-repeat;
+    background-clip: cover;
+}
+
+.about-us-wrapper .img {
+    float: left;
+    width: 488px;
+}
+
+.about-us-wrapper .about-us {
+    float: left;
+    width: 452px;
+    color: #fff;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.about-us h3 {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 33px;
+}
+
+.about-us span {
+    line-height: 13px;
+    font-size: 12px;
+    color: #ffc600;
+    text-transform: uppercase;
+}
+
+.about-us p {
+    position: relative;
+    height: 54px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 18px;
+    transition: height .5s;
+}
+
+.about-us .text-ellipsis:after {
+    content: "......";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(../images/bgMore.png)no-repeat;
+    color: #fff;
+}
+
+.about-us a {
+    display: inline-block;
+    padding: 2px 20px;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.about-us a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* 最新招聘 */
+
+.advertise {
+    padding: 20px 0 40px;
+}
+
+.advertise .left {
+    float: left;
+    width: 528px;
+}
+
+.advertise .left li {
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px dashed #999;
+}
+
+.advertise .left li:first-child .img {
+    height: 130px;
+    width: 130px;
+}
+
+.advertise .left .img {
+    float: left;
+    height: 88px;
+    width: 88px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.advertise .left .img img {
+    transition: all .5s;
+}
+
+.advertise .left .img:hover img {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.advertise .left .content {
+    float: left;
+    width: 398px;
+}
+
+.advertise .left li:first-child .content {
+    width: 383px;
+}
+
+.left .content a:nth-of-type(1) {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.left .content a:nth-of-type(1):hover {
+    color: #1ba6e7;
+}
+
+.left .content span {
+    line-height: 16px;
+    color: #1ba6e7;
+    font-size: 12px;
+}
+
+.left .content p {
+    color: #333;
+    font-size: 12px;
+}
+
+.left .content a:nth-of-type(2) {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: 25px;
+    color: #1ba6e7;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/Sprites.png)no-repeat -412px 0;
+    background-origin: padding-box;
+}
+
+.advertise .right {
+    float: right;
+    width: 390px;
+}
+
+.right .bg-img {
+    width: 390px;
+    height: 272px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid rgb(195, 195, 195);
+    margin-bottom: 17px;
+}
+
+.right .bg-img div {
+    height: 252px;
+    width: 370px;
+    background: url(http://www.kdrp2004.com/wp-content/uploads/2016/01/jobs.png)no-repeat;
+    background-size: 380px 262px;
+}
+
+.right .title {
+    font-size: 0;
+    height: 25px;
+    line-height: 25px;
+}
+
+.right .title strong,
+.right .title strong span {
+    font-size: 18px;
+}
+
+.right .title strong,
+.right .title span {
+    display: inline-block;
+}
+
+.right ul li {
+    padding: 6px 0;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    border-bottom: 1px dashed #999;
+}
+
+.right ul li a {
+    float: left;
+    padding-left: 15px;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/Sprites.png)no-repeat 0 -294px;
+    background-origin: padding-box;
+    font-size: 14px;
+    color: #666;
+}
+
+.right ul li a:hover {
+    color: #1ba6e7;
+}
+
+.right ul li span {
+    float: right;
+    color: #999;
+    font-size: 12px;
+}
+
+
+/* 客服 */
+
+.kefu-link {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px;
+    border: 1px solid rgb(204, 204, 204);
+    width: 50px;
+    background: #fff;
+}
+
+.kefu-link li {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px dashed #999;
+}
+
+.kefu-link li a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/Sprites.png) no-repeat;
+}
+
+.kefu-link li:nth-of-type(1) a {
+    background-position: 9px -953px;
+}
+
+.kefu-link li:nth-of-type(2) a {
+    background-position: 9px -1003px;
+}
+
+.kefu-link li:nth-of-type(3) a {
+    background-position: 9px -1056px;
+}
+
+.kefu-link li:nth-of-type(4) a {
+    background-position: 9px -1109px;
+}
+
+.kefu-link li:nth-of-type(5) a {
+    background-position: 9px -1161px;
+}
+
+.kefu-link li:hover {
+    background: #f0f0f0;
+}
+
+.kefu-link .wx {
+    position: relative;
+}
+
+.kefu-link .wx span {
+    position: absolute;
+    right: 52px;
+    top: 0;
+    height: 210px;
+    width: 210px;
+    display: none;
+}
+
+.kefu-link .wx:hover span {
+    display: block;
+}
+
+
+/* 页脚 */
+
+.footer-top {
+    padding-top: 20px;
+    width: 100%;
+    background: rgb(39, 39, 39);
+}
+
+.footer-top .link {
+    overflow: hidden;
+}
+
+.footer-top .link li {
+    float: left;
+    width: 210px;
+}
+
+.footer-top .link li a,
+.footer-top .link li b {
+    display: block;
+    color: #1ba6e7;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer-top .link li b {
+    margin-bottom: 10px;
+}
+
+.footer-top .link .info {
+    width: 256px;
+}
+
+.footer-top .link .info p {
+    border-bottom: #2e2e2e 1px solid;
+    padding: 5px 0 5px 26px;
+    color: #cacaca;
+    font-size: 12px;
+    width: 258px;
+    box-sizing: border-box;
+    background: url(http://www.kdrp2004.com/wp-content/themes/lightpark/images/Sprites.png)no-repeat;
+    background-position-x: 2px -423px;
+}
+
+.footer-top .link .info p:nth-of-type(1) {
+    background-position-y: -423px;
+}
+
+.footer-top .link .info p:nth-of-type(2) {
+    background-position-y: -457px;
+}
+
+.footer-top .link .info p:nth-of-type(3) {
+    background-position-y: -494px;
+}
+
+.footer-top .link .info p:nth-of-type(4) {
+    background-position-y: -531px;
+}
+
+.footer-top .link .hot {
+    width: 206px;
+    margin-left: 26px;
+    overflow: hidden;
+}
+
+.footer-top .link .hot a {
+    float: left;
+    width: 64px;
+    height: 64px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    margin-bottom: 3px;
+}
+
+.footer-top .link .hot a:hover {
+    border-color: #fff;
+}
+
+.footer-top .nav-bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0 20px;
+    border-top: 1px dashed #999;
+}
+
+.footer-top .nav-bottom a {
+    color: #cacaca;
+    font-size: 12px;
+}
+
+.footer-top .nav-bottom a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    height: 53px;
+    padding: 10px 0;
+    width: 100%;
+    background: #191919;
+}
+
+.footer-bottom a,
+.footer-bottom p {
+    color: #cacaca;
+    font-size: 12px;
+}
+
+.footer-bottom ul {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.footer-bottom ul li {
+    float: left;
+    margin-right: 15px;
+}
